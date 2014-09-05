@@ -1,0 +1,25 @@
+{
+  "name": "browsersavefile",
+  "version": "0.0.0",
+  "description": "This module will save a blob/file from the browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/browsersavefile.git"
+  },
+  "keywords": [
+    "browser",
+    "save",
+    "file",
+    "browserify"
+  ],
+  "author": "Mikko Haapoja <me@mikkoh.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jam3/browsersavefile/issues"
+  },
+  "homepage": "https://github.com/Jam3/browsersavefile"
+}
