@@ -1,6 +1,6 @@
 {
   "name": "browsersavefile",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This module will save a blob/file from the browser.",
   "main": "index.js",
   "scripts": {
