@@ -4,7 +4,7 @@
 <a name="module_browsersavefile"></a>
 #browsersavefile
 <a name="exp_module_browsersavefile"></a>
-##module.exports(fileName, blob) ⏏
+##browsersavefile(fileName, blob)
 browsersavefile will take a file name and a Blob object. It will then
 download the file from the users browser.
 
