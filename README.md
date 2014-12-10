@@ -18,7 +18,7 @@ download the file from the users browser.
 var browsersavefile = require( 'browsersavefile' );
 
 var someHTML = [ '<div>HELLO WORLD</div>' ],
-	   blobData = new Blob( someHTML, {type : 'text/html'});
+	blobData = new Blob( someHTML, {type : 'text/html'});
 	
 browsersavefile( 'my file', blobData );
 ```
