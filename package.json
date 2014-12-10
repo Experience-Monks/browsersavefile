@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Jam3/browsersavefile/issues"
   },
-  "homepage": "https://github.com/Jam3/browsersavefile"
+  "homepage": "https://github.com/Jam3/browsersavefile",
+  "devDependencies": {
+    "prova": "^2.1.1"
+  }
 }
