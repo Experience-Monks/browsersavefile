@@ -1,6 +1,13 @@
 /** @module browsersavefile */
 
-var URL = window.URL || window.webkitURL;
+var URL = typeof window !== 'undefined' && (window.URL || window.webkitURL);
+
+var link;
+if (typeof document !== 'undefined') {
+	link = document.createElement( 'a' );
+	link.style = 'display: none';
+	document.body.appendChild( link );
+}
 
 /**
  * browsersavefile will take a file name and a Blob object. It will then
@@ -25,12 +32,11 @@ module.exports = function browsersavefile( fileName, blob ) {
 		throw new Error( 'URL is not supported cannot download file' );
 
 	var url = URL.createObjectURL( blob );
-	
-	var clickEV = document.createEvent( 'Event' );
-	clickEV.initEvent( 'click', true, true);
-
-	var link = document.createElement( 'a' );
 	link.href = url;
 	link.download = fileName;
-	link.dispatchEvent( clickEV );
+	link.click();
+
+	setTimeout(function cleanupBlob() {
+		URL.revokeObjectURL( url );
+	});
 };
